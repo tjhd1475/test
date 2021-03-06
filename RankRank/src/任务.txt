@@ -1,0 +1,14 @@
+1.创建用户表：
+Create table users(
+    userId int primary key auto_increment,#用户编号
+    userName varchar(50),  #用户名
+    password varchar(50),  #用户密码
+    sex      char(1),      #用户性别
+    email    varchar(50)   #用户邮箱
+)
+2.在src下com.RtUZS.entity.users准备users实体类
+3.在src下com.RtUZS.util.jdbcutil准备jdbcutil
+4.在web的web-inf下创建lib引入jar包，并add as lib
+5.在web下写出html文件并检测是否发生请求三要素正常
+6.在src下com.RtUZS.controller下写Servlet
+7.运行测试
